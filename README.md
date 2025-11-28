@@ -6,7 +6,7 @@
 ---
 
 ### Portfólio Online  
-🔗 [Acesse o Portfólio](https://rodrigodeandrade90.github.io/index.html)
+🔗 [Acesse o Portfólio]( https://fatec-jacarei-dsm-portfolio.github.io/ra2581392423040)
 🎤 [Pitch de Apresentação (vídeo)](https://github.com/user-attachments/assets/bd8149fa-71f1-4c72-9bdd-97e9bdb7fc3b)
 
 

@@ -64,6 +64,25 @@ section.vó{
     width: 100%;
 }
 
+.gif-vó{
+    position: relative;
+    width: 65%;
+    float: right;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.gif-vó img{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
 @media (max-width: 768px){
     .titulo-vó{
        font-size:300%;

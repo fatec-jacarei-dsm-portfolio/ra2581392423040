@@ -45,6 +45,20 @@ section.vó{
     color:white !important;
 }
 
+.texto-vó1{
+    position: relative;
+    float: left;
+    width: 40%;
+    text-justify: auto;
+    margin-right: 2%;
+    margin-top: 15px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    color:white !important;
+}
+
+
 .imagem-vó{
     position: relative;
     width: 65%;
@@ -66,7 +80,7 @@ section.vó{
 
 .gif-vó{
     position: relative;
-    width: 65%;
+    width: 50%;
     float: right;
     margin-left: 5%;
     margin-top: 30px;

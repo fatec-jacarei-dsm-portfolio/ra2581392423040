@@ -1,191 +1,270 @@
 @charset "UTF-8";
 
-/*Sobre a pessoa*/ 
-section.sobre{
+.about-hero {
+    padding: 78px 0 84px;
+    background:
+        radial-gradient(circle at 75% 12%, rgba(24, 188, 156, 0.32), transparent 22rem),
+        linear-gradient(125deg, #172a34, #1b4a51 64%, #137068);
+    color: #ffffff;
+}
+
+.about-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(270px, 0.8fr);
+    align-items: center;
+    gap: clamp(42px, 9vw, 120px);
+}
+
+.about-hero .section-label {
+    color: #7ce5cf;
+}
+
+.about-hero h1 {
+    max-width: 760px;
+    margin: 0;
+    font-size: clamp(2.45rem, 5.4vw, 4.7rem);
+    line-height: 1.03;
+    letter-spacing: -0.055em;
+}
+
+.about-hero__copy > p:last-child {
+    max-width: 650px;
+    margin: 25px 0 0;
+    color: #d9e8e8;
+    font-size: 1.1rem;
+    line-height: 1.68;
+}
+
+.about-photo {
     position: relative;
-    display: flex;
-    font-size: 1em; /* tamanho da letra*/
-    color: black;
-    justify-content: center;
-    text-align: justify; 
-    background-color: #18bc9c;
 }
 
-.center-sobre{
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 50px;
+.about-photo::after {
+    position: absolute;
+    right: -14px;
+    bottom: -14px;
+    z-index: 0;
+    width: 70%;
+    height: 70%;
+    border: 1px solid rgba(157, 243, 224, 0.48);
+    border-radius: 18px;
+    content: "";
 }
 
-.titulo-pessoa{
+.about-photo img {
+    position: relative;
+    z-index: 1;
     width: 100%;
+    aspect-ratio: 4 / 4.4;
+    border: 6px solid rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 22px 40px rgba(4, 18, 23, 0.26);
 }
 
-.titulo{
-    color:white;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 40px;
-    text-transform: uppercase;
+.about-story {
+    padding: 82px 0;
+    background: #f7fafa;
 }
 
-.texto{
-    position: relative;
-    float: left;
-    width: 60%;
-    text-justify: auto;
-    margin-right: 2%;
-    margin-top: 15px;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 20px;
-    color:white !important;
+.about-story__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 100px;
 }
 
-.imagem{
-    position: relative;
-    width: 30%;
-    float: right;
-    margin-left: 5%;
-    margin-top: 30px;
+.about-story__text {
+    padding-left: 28px;
+    border-left: 3px solid var(--brand);
 }
 
-.imagem img{
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
+.about-story__text p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.02rem;
+    line-height: 1.75;
 }
 
-/*Cidades Onde Morei*/ 
-section.fotos-cidades{
-    background-color: #f1f1f1;
-    padding: 20px 0;
+.about-story__text p + p {
+    margin-top: 22px;
 }
 
-.center-cidades {
-    margin: 0 auto;
-    padding: 0.2%;
+.about-path {
+    padding: 78px 0 88px;
+    background: #eaf2f1;
+}
+
+.about-path .section-title {
+    max-width: 620px;
+}
+
+.path-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 34px;
+}
+
+.path-card {
+    min-height: 218px;
+    padding: 28px;
+    border: 1px solid #d3e4e0;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.path-card span {
+    display: block;
+    margin-bottom: 42px;
+    color: var(--brand-dark);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+}
+
+.path-card h3 {
+    margin: 0 0 9px;
+    color: var(--ink);
+    font-size: 1.1rem;
+}
+
+.path-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.91rem;
+    line-height: 1.58;
+}
+
+.places-section {
+    padding: 82px 0 90px;
+    background: #f7fafa;
+}
+
+.places-heading {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 35px;
 }
 
-.titulo-cidades{
+.places-heading > p {
+    max-width: 330px;
+    margin: 0 0 4px;
+    color: var(--muted);
+    font-size: 0.94rem;
+    line-height: 1.55;
+}
+
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 34px;
+}
+
+.place-card {
+    position: relative;
+    min-height: 325px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: var(--ink);
+}
+
+.place-card::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(8, 25, 31, 0.04) 35%, rgba(8, 25, 31, 0.82) 100%);
+    content: "";
+}
+
+.place-card img {
     width: 100%;
+    height: 325px;
+    object-fit: cover;
+    transition: transform 300ms ease;
 }
 
-.cidades{
-    color: #2c3e50;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 40px;
-    text-transform: uppercase;
+.place-card:hover img {
+    transform: scale(1.06);
 }
 
-
-.cidades-single{
-    width: 22%;
-    margin-right: 3%;
-    text-align: center;
-    color:#124265;
+.place-card div {
+    position: absolute;
+    right: 24px;
+    bottom: 22px;
+    left: 24px;
+    z-index: 1;
 }
 
-.cidades-single img{
-    max-width: 100%;
-    height: 80%;
+.place-card span {
+    color: #90e8d5;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
 }
 
-.cidades-single p{
-  text-align: center;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 18px;
-  color:#2c3e50 !important;;
-  padding-top: 15px;
+.place-card h3 {
+    margin: 6px 0 0;
+    color: #ffffff;
+    font-size: 1.7rem;
+    letter-spacing: -0.04em;
 }
 
-.cidades-single img{
-    filter: grayscale(100%);
-    transform: scale(1,1);
-    transition: 1s;
-}
+@media (max-width: 900px) {
+    .about-hero__grid,
+    .about-story__grid {
+        grid-template-columns: 1fr;
+    }
 
-.cidades-single img:hover{
-    transform: scale(1.1,1.1);
-    filter: grayscale(0);
-}
+    .about-photo {
+        width: min(100%, 400px);
+    }
 
+    .about-story__grid {
+        gap: 38px;
+    }
+
+    .path-grid,
+    .places-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .place-card,
+    .place-card img {
+        min-height: 265px;
+        height: 265px;
+    }
+}
 
 @media (max-width: 768px) {
-    .titulo{
-       font-size:300%;
+    .about-hero,
+    .about-story,
+    .places-section {
+        padding: 58px 0;
     }
 
-    .texto{
-        width: 100%;
+    .about-path {
+        padding: 58px 0 64px;
     }
 
-    .texto p{
-        font-size: 100%;
+    .about-hero h1 {
+        font-size: clamp(2.35rem, 11vw, 3.7rem);
     }
 
-    .imagem{
-        width: 100%;
+    .about-hero__copy > p:last-child {
+        font-size: 1rem;
     }
 
-    .titulo-tg{
-       font-size:300%;
+    .about-story__text {
+        padding-left: 20px;
     }
 
-    .texto-tg{
-        width: 100%;
+    .places-heading {
+        display: block;
     }
 
-    .texto-tg p{
-        font-size: 100%;
-    }
-
-    .imagem-tg{
-        width: 100%;
-    }
-
-    .titulo-tcc{
-       font-size:300%;
-    }
-
-    .texto-tcc{
-        width: 100%;
-    }
-
-    .texto-tcc p{
-        font-size: 100%;
-    }
-
-    .imagem-tcc{
-        width: 100%;
-    }
-
-    .titulo-vó{
-       font-size:300%;
-    }
-
-    .texto-vó{
-        width: 100%;
-    }
-
-    .texto-vó p{
-        font-size: 100%;
-    }
-
-    .imagem-vó{
-        width: 100%;
+    .places-heading > p {
+        margin-top: 16px;
     }
 }

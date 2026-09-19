@@ -5,104 +5,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rodrigo de Andrade</title>
+    <meta name="description" content="Projetos acadêmicos e soluções digitais desenvolvidas por Rodrigo de Andrade.">
+    <title>Projetos | Rodrigo de Andrade</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../static/css/style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../static/css/projetos.css" media="screen">
-    <link rel="icon" href="../static/imagens/Logotipo.png"> 
-
+    <link rel="icon" href="../static/imagens/Logotipo.png">
 </head>
 
 <body>
     <div class="container">
-       
-       <header id="header">
-            <a id="logo" href="../../index.html">
-                <img src="../static/imagens/Logotipo.png" width="142">
+        <header id="header">
+            <a id="logo" href="../../index.html" aria-label="Página inicial de Rodrigo de Andrade">
+                <img src="../static/imagens/Logotipo.png" width="142" alt="Logotipo de Rodrigo de Andrade">
             </a>
             <nav id="nav">
-              <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
-                <span id="menu-mobile"></span>
-              </button>
-              <ul id="menu" role="menu">
-                <li><a href="../../index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="trabalhos-academicos.html">Trabalhos Acadêmicos</a></li>
-                <li><a class="btn-menu" href="projetos.html">Projetos da Faculdade</a></li>
-              </ul>
+                <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="menu-mobile"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="../../index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="trabalhos-academicos.html">Trabalhos Acadêmicos</a></li>
+                    <li><a class="btn-menu" href="projetos.html" aria-current="page">Projetos</a></li>
+                </ul>
             </nav>
-          </header>
+        </header>
 
-        <section class="vó">
-            <div class="center-vó">
+        <main>
+            <section class="projects-hero" aria-labelledby="projects-title">
+                <div class="projects-intro">
+                    <p class="eyebrow">PORTFÓLIO</p>
+                    <h1 id="projects-title">Projetos que transformam necessidades em soluções digitais.</h1>
+                    <p class="hero-description">Uma seleção de projetos acadêmicos desenvolvidos em equipe, reunindo tecnologia, dados e experiências digitais para problemas reais.</p>
+                </div>
+            </section>
 
-                <div class="titulo-vó">
-                    <h2 class="titulo-projeto-vó">PROJETO API VÓ MARIA FÉLIX</h2>                      
+            <section class="projects-section" aria-labelledby="projects-grid-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">JORNADA ACADÊMICA</p>
+                        <h2 id="projects-grid-title">Projetos em ordem de desenvolvimento</h2>
+                    </div>
+                    <p class="projects-count">07 projetos selecionados</p>
                 </div>
 
-                <div class="texto-vó">
-                    <p>Projeto Intregador apresentado como atividade em grupo de API curso de Tecnólogo em Análise e Desenvolvimento, cujo nesse trabalho foi uma implementação de um site de uma ONG Vó Maria Felix</p> 
-                    <p>O objetivo desse API é uma criação de um site institucional, visando a melhoria da visibilidade do centro de convivência infantil Vó Maria Félix para o público e modo geral, onde o usuário poderá facilmente ter acesso as informações sobre a ONG </p>
+                <div class="projects-grid">
+                    <article class="project-card project-card--integrator">
+                        <div class="project-image image-cover">
+                            <img src="../static/imagens/Maria Vó Félix.gif" alt="Tela do site institucional da ONG Vó Maria Félix">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="semester-tag">Projeto integrador</span>
+                            </div>
+                            <h3>Vó Maria Félix</h3>
+                            <p class="project-summary">Site institucional para a ONG Centro de Convivência Infantil Vó Maria Félix.</p>
+                            <p>O projeto fortalece a presença digital da instituição e torna suas informações mais acessíveis ao público.</p>
+                            <ul class="project-tags" aria-label="Áreas do projeto">
+                                <li>Site institucional</li>
+                                <li>Impacto social</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card semester-card">
+                        <div class="project-image image-cover image-infatec">
+                            <img src="../static/imagens/infatec-canais.png" alt="Tela de Informações Gerais da plataforma de comunicação acadêmica InFatec">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="semester-tag">1º semestre · DSM</span>
+                                <span class="team-name">T3chnogroup</span>
+                            </div>
+                            <h3>InFatec</h3>
+                            <p class="project-summary">Aplicação web para comunicação seletiva entre a administração, docentes e discentes.</p>
+                            <p>A solução organiza avisos gerais e específicos por curso, reduzindo a perda de informações relevantes em meio ao alto volume de e-mails intensificado durante a pandemia.</p>
+                            <ul class="project-tags" aria-label="Áreas do projeto">
+                                <li>Comunicação acadêmica</li>
+                                <li>Canais de aviso</li>
+                                <li>Aplicação web</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card semester-card">
+                        <div class="project-image image-cover image-ionic">
+                            <img src="../static/imagens/ionic-health.png" alt="Tela de documentos da plataforma Ionic Health">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="semester-tag">2º semestre · DSM</span>
+                                <span class="team-name">TheAchievers</span>
+                            </div>
+                            <h3>Ionic Health</h3>
+                            <p class="project-summary">Plataforma para gestão de talentos, documentos e processos internos com proteção de dados.</p>
+                            <p>Centraliza o cadastro de colaboradores CLT e PJ, admissão com autocadastro, aprovação de informações, organograma, usuários e trilhas de aprendizagem, respeitando a LGPD.</p>
+                            <ul class="project-tags" aria-label="Áreas do projeto">
+                                <li>Recursos Humanos</li>
+                                <li>LGPD</li>
+                                <li>Gestão de talentos</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card semester-card">
+                        <div class="project-image image-cover image-qlimate">
+                            <img src="../static/imagens/qlimate.png" alt="Tela da plataforma de monitoramento climático Qli-Mate">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="semester-tag">3º semestre · DSM</span>
+                                <span class="team-name">Storm Access</span>
+                            </div>
+                            <h3>Qli-Mate</h3>
+                            <p class="project-summary">Plataforma de monitoramento climático e prevenção de riscos no Lago de Furnas.</p>
+                            <p>Integra dados de estações meteorológicas para apresentar informações confiáveis e alertas de segurança em tempo real.</p>
+                            <ul class="project-tags" aria-label="Áreas do projeto">
+                                <li>Clima</li>
+                                <li>Monitoramento</li>
+                                <li>Alertas em tempo real</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card semester-card">
+                        <div class="project-image image-light">
+                            <img src="../static/imagens/bio-alert.png" alt="Ilustração da pulseira SOS do sistema Bio Alert">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="semester-tag">4º semestre · DSM</span>
+                                <span class="team-name">Zentech</span>
+                            </div>
+                            <h3>Bio Alert</h3>
+                            <p class="project-summary">Sistema de detecção de quedas para ampliar a segurança de idosos que permanecem sozinhos em casa.</p>
+                            <p>Por meio de sensores inteligentes em uma pulseira, a solução identifica quedas automaticamente e aciona alertas para agilizar o socorro em situações de emergência.</p>
+                            <ul class="project-tags" aria-label="Áreas do projeto">
+                                <li>Segurança</li>
+                                <li>Sensores inteligentes</li>
+                                <li>Alertas</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card semester-card">
+                        <div class="project-image image-cover">
+                            <img src="../static/imagens/soccer-inspector.png" alt="Logotipo verde do Soccer Inspector com uma bola de futebol estilizada">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="semester-tag">5º semestre · DSM</span>
+                                <span class="team-name">HighTech</span>
+                            </div>
+                            <h3>Soccer Inspector</h3>
+                            <p class="project-summary">Plataforma inteligente para análise de desempenho de atletas de futebol.</p>
+                            <p>Importa o histórico de partidas, acompanha indicadores físicos em dashboards, identifica perfis semelhantes com IA e sinaliza quedas de desempenho para apoiar comissões técnicas.</p>
+                            <ul class="project-tags" aria-label="Áreas do projeto">
+                                <li>Inteligência Artificial</li>
+                                <li>Dashboards</li>
+                                <li>Dados esportivos</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card semester-card">
+                        <div class="project-image image-cover image-procon">
+                            <img src="../static/imagens/chatbot-procon.png" alt="Tela atualizada do assistente digital PROCON Jacareí">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="semester-tag">6º semestre · DSM</span>
+                                <span class="team-name">HighTech</span>
+                            </div>
+                            <h3>Chatbot PROCON</h3>
+                            <p class="project-summary">Assistente inteligente no WhatsApp para orientação inicial ao consumidor.</p>
+                            <p>O chatbot esclarece dúvidas, conduz fluxos conforme as diretrizes do PROCON e, quando necessário, encaminha para atendimento presencial com agendamento e lista de documentos.</p>
+                            <ul class="project-tags" aria-label="Áreas do projeto">
+                                <li>WhatsApp</li>
+                                <li>Atendimento digital</li>
+                                <li>Serviço público</li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
-                <div class="imagem-vó">
-                    <img src="../static/imagens/Maria Vó Félix.gif" title="Tela mostrando o funcionamento de um site institucional">
-                </div>
-
-                
-            </div><!--center-vó-->
-        </section><!--vó-->
-
-        <section class="vó">
-            <div class="center-vó">
-
-                <div class="titulo-vó">
-                    <h2 class="titulo-projeto-vó">PROJETO QLI-MATE</h2>                      
-                </div>
-
-                <div class="texto-vó">
-                    <p>O Qli-Mate, desenvolvido pelo grupo Storm Access da Fatec Jacareí, é uma plataforma inovadora projetada para promover a segurança e o bem-estar das comunidades ao redor do Lago de Furnas. Tendo como base a integração de dados meteorológicos coletados por três estações localizadas estrategicamente, o aplicativo oferece uma solução robusta para monitoramento climático e prevenção de riscos associados a eventos de vento extremo.</p> 
-                    <p>O principal objetivo do Qli-Mate é fornecer aos usuários informações meteorológicas detalhadas e confiáveis, apresentadas de maneira visual e acessível, além de emitir alertas de segurança em tempo real. </p>
-                </div>
-                <div class="imagem-vó">
-                    <img src="../static/imagens/qlimate.png" title="Tela mostrando o Qli-Mate">
-                </div>
-
-                
-            </div><!--center-vó-->
-        </section><!--vó-->
-
-        <section class="vó">
-            <div class="center-vó">
-
-                <div class="titulo-vó">
-                    <h2 class="titulo-projeto-vó">PROJETO BIOALERT</h2>                      
-                </div>
-
-                <div class="texto-vó1">
-                    <p>O BioAlert, desenvolvido pelo grupo ZenTech da Fatec Jacareí, é uma plataforma inovadora projetada para promover a segurança para prevenção de uma queda de idoso, como um alerta ao aplicativo emitindo a notificação de queda, e entrar no SAMU para emergência.</p> 
-                    <p>O principal objetivo da minha participação é a usabilidade do aplicativo, colocando um design mais interativo, e mostrando o que tem na interatividade nele. </p>
-                </div>
-                <div class="gif-vó">
-                    <img src="../static/imagens/video-bioalert.gif" title="Tela mostrando o Qli-Mate">
-                </div>
-
-                
-            </div><!--center-vó-->
-        </section><!--vó-->
-
+            </section>
+        </main>
 
         <footer class="footer-rodrigo">
             <div>
-                <p>Copyright 2025 - Rodrigo de Andrade®
-                </p>
+                <p>Copyright 2026 - Rodrigo de Andrade®</p>
             </div>
         </footer>
     </div>
 
     <script src="../static/js/script.js"></script>
-
 </body>
 
 </html>

@@ -14,7 +14,7 @@ O portfólio reúne minha formação, trabalhos acadêmicos e projetos desenvolv
 ## Apresentações
 
 - [Pitch de apresentação — 4º semestre - 28/11/2025](https://github.com/user-attachments/assets/486bfa5c-a133-431b-ab9e-6cfc52ecabfa)<br>
-- [Pitch atualizado — 6º semestre - 06/11/2026](https://youtu.be/oRjhygATKs0)<br>
+- [Pitch atualizado — 6º semestre - 06/11/2026](https://youtu.be/OiCk9WDT5HI)<br>
 
 ## Estrutura
 

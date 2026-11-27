@@ -218,6 +218,14 @@ body {
     min-height: 24px;
 }
 
+.project-content .institution-reference {
+    margin: 8px 0 0;
+    color: #2937ae;
+    font-size: 0.76rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
 .semester-tag,
 .team-name {
     display: inline-flex;
@@ -249,7 +257,7 @@ body {
 }
 
 .project-content h3 {
-    margin: 16px 0 9px;
+    margin: 16px 0 16px;
     color: var(--ink);
     font-size: 1.42rem;
     letter-spacing: -0.025em;
@@ -382,10 +390,10 @@ body {
 }
 
 .team-list li {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 4px;
     padding: 8px 10px;
     border-radius: 7px;
     background: #f6f9f9;
@@ -400,9 +408,71 @@ body {
     text-underline-offset: 3px;
 }
 
-.team-list span {
+.team-list li > span:first-child {
+    color: #08725f;
+    font-weight: 700;
+}
+
+.team-list li > span:not(:first-child) {
     color: var(--muted);
-    text-align: right;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.team-member-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 7px;
+    min-width: 0;
+}
+
+.team-member-links > a:first-child {
+    overflow-wrap: anywhere;
+}
+
+@supports (grid-template-rows: subgrid) and (display: contents) {
+    .projects-grid {
+        row-gap: 0;
+    }
+
+    .project-card {
+        display: grid;
+        grid-row: span 11;
+        grid-template-rows: subgrid;
+        margin-bottom: 24px;
+    }
+
+    .project-card--integrator {
+        display: grid;
+    }
+
+    .project-card > .project-content {
+        display: contents;
+        padding: 0;
+    }
+
+    .project-card > .project-content > * {
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+
+    .project-card > .project-content > .project-meta {
+        margin-top: 24px;
+    }
+
+    .project-card > .project-content > h3 {
+        margin: 8px 24px 16px;
+    }
+
+    .project-card > .project-content > .project-links {
+        margin-bottom: 17px;
+    }
+
+    .project-card > .project-content > .team-details {
+        margin-top: 0;
+        margin-bottom: 26px;
+    }
 }
 
 @media (max-width: 980px) {
@@ -472,6 +542,48 @@ body {
 
     .team-list {
         grid-template-columns: 1fr;
+    }
+}
+
+@supports (grid-template-rows: subgrid) and (display: contents) {
+    @media (max-width: 768px) {
+        .project-card,
+        .project-card--integrator {
+            display: block;
+            grid-row: auto;
+            margin-bottom: 0;
+        }
+
+        .project-card > .project-content {
+            display: block;
+            padding: 21px 19px 23px;
+        }
+
+        .project-card--integrator > .project-content {
+            padding: 24px 24px 26px;
+        }
+
+        .project-card > .project-content > * {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .project-card > .project-content > .project-meta {
+            margin-top: 0;
+        }
+
+        .project-card > .project-content > h3 {
+            margin: 16px 0 16px;
+        }
+
+        .project-card > .project-content > .project-links {
+            margin-bottom: 0;
+        }
+
+        .project-card > .project-content > .team-details {
+            margin-top: 17px;
+            margin-bottom: 0;
+        }
     }
 }
 

@@ -297,6 +297,52 @@ body {
     font-weight: 700;
 }
 
+.project-technologies {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border: 1px solid #e1ebec;
+    border-radius: 9px;
+    background: #f8fbfb;
+}
+
+.technologies-heading {
+    margin: 0 0 11px;
+    color: #344d58;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.technology-list li {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 32px;
+    padding: 5px 8px;
+    border: 1px solid #e1e9eb;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #40505b;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.technology-list img {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
 .project-group-contribution {
     margin-top: 20px;
     padding: 15px 16px;
@@ -438,7 +484,7 @@ body {
 
     .project-card {
         display: grid;
-        grid-row: span 11;
+        grid-row: span 12;
         grid-template-rows: subgrid;
         margin-bottom: 24px;
     }
